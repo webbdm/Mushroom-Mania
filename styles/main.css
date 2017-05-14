@@ -13,12 +13,26 @@ body {
   color: black;
   height: 700px;
   width: 65%;
-  margin-top: 7%; }
+  margin-top: 3%; }
+  .mushroomBox .title {
+    padding: 0 20%;
+    font-family: "Lakki Reddy", cursive;
+    font-size: 50px; }
   .mushroomBox .list-options {
+    padding: 0 15%;
+    margin: 10px 0;
     width: 100%; }
     .mushroomBox .list-options .searchInput {
-      width: inherit; }
+      width: 50%; }
   .mushroomBox .panel-box {
     overflow: scroll; }
   .mushroomBox .panel {
-    background-color: rgba(40, 26, 26, 0.78); }
+    background-color: rgba(40, 26, 26, 0.78);
+    padding: 0 1%; }
+  .mushroomBox h2 {
+    font-size: 20px;
+    font-family: "Lakki Reddy", cursive;
+    color: white;
+    text-transform: capitalize; }
+  .mushroomBox p {
+    color: green; }

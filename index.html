@@ -3,6 +3,7 @@
 
 <head>
     <title>Mushroom Mania</title>
+    <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,14 +12,15 @@
 <body ng-app="MushroomApp">
     <div class="container" ng-controller="ShroomyCtrl">
         <div class="col-md-5 col-md-offset-5 mushroomBox">
+            <h1 class="title">Mushroom Mania</h1>
             <div class="list-options">
-                <input class="searchInput" type="text" name="" ng-model="searchText" placeholder="Search for a Mushroom"><br>
+                <input class="searchInput" type="text" name="" ng-model="searchText" placeholder="Search for a Mushroom">
                 <input type="radio" name="poison" value="false" ng-model="edible"> Poisonous
                 <input type="radio" name="poison" value="true" ng-model="edible"> Non-Poisonous
             </div>
             <div class="panel-box" ng-repeat="mushroom in mushrooms | filter: edible | filter: searchText">
                 <div class="panel panel-default">
-                    <h1>{{mushroom.name}}</h1>
+                    <h2>{{mushroom.name}}</h2>
                     <p>{{mushroom.description}}</p>
                 </div>
             </div>
