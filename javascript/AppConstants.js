@@ -1,9 +1,9 @@
 app.constant("FIREBASE_CONFIG", {
-    apiKey: "AIzaSyDp8Tp586vLQsJTjJ7mb4eFMKpeI_m1XFQ",
-    authDomain: "mushroom-mania-a06d3.firebaseapp.com",
-    databaseURL: "https://mushroom-mania-a06d3.firebaseio.com",
-    projectId: "mushroom-mania-a06d3",
-    storageBucket: "mushroom-mania-a06d3.appspot.com",
-    messagingSenderId: "951584903243"
+    apiKey: "AIzaSyAf44mnpf06oaPB4N19qFJl5ZJjrUHVlJw",
+    authDomain: "mushroom-mania-8ccb3.firebaseapp.com",
+    databaseURL: "https://mushroom-mania-8ccb3.firebaseio.com",
+    projectId: "mushroom-mania-8ccb3",
+    storageBucket: "mushroom-mania-8ccb3.appspot.com",
+    messagingSenderId: "385808199533"
 });
 

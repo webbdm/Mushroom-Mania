@@ -2,7 +2,7 @@ app.run((FIREBASE_CONFIG) => {
     firebase.initializeApp(FIREBASE_CONFIG);
 });
 
-app.controller("ShroomyCtrl", ($http, $q, $scope, FIREBASE_CONFIG) => { 
+app.controller("ShroomyCtrl", ($http, $q, $scope, FIREBASE_CONFIG) => {
     $scope.mushrooms = [];
 
     let getMushrooms = () => {
