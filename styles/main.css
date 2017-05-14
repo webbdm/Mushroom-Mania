@@ -1,3 +1,24 @@
 body {
-  background: url("http://thiswallpaper.com/cdn/hdwallpapers/733/green%20mushroom%20high%20definition%20wallpaper.jpg") no-repeat center center fixed;
+  background: url("https://github.com/webbdm/Mushroom-Mania/blob/exercise/mushroom.jpg?raw=true") no-repeat center center fixed;
   background-size: cover; }
+
+.container {
+  margin: 0 10%;
+  width: 85%; }
+
+.mushroomBox {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  color: black;
+  height: 700px;
+  width: 65%;
+  margin-top: 7%; }
+  .mushroomBox .list-options {
+    width: 100%; }
+    .mushroomBox .list-options .searchInput {
+      width: inherit; }
+  .mushroomBox .panel-box {
+    overflow: scroll; }
+  .mushroomBox .panel {
+    background-color: rgba(40, 26, 26, 0.78); }

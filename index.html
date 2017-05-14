@@ -9,12 +9,21 @@
 </head>
 
 <body ng-app="MushroomApp">
-    <div ng-controller="ShroomyCtrl">
-        <div>
-            <h1>Test</h1>
+    <div class="container" ng-controller="ShroomyCtrl">
+        <div class="col-md-5 col-md-offset-5 mushroomBox">
+            <div class="list-options">
+                <input class="searchInput" type="text" name="" ng-model="searchText" placeholder="Search for a Mushroom"><br>
+                <input type="radio" name="poison" value="false" ng-model="edible"> Poisonous
+                <input type="radio" name="poison" value="true" ng-model="edible"> Non-Poisonous
+            </div>
+            <div class="panel-box" ng-repeat="mushroom in mushrooms | filter: edible | filter: searchText">
+                <div class="panel panel-default">
+                    <h1>{{mushroom.name}}</h1>
+                    <p>{{mushroom.description}}</p>
+                </div>
+            </div>
         </div>
     </div>
-
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
