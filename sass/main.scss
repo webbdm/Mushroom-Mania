@@ -1,0 +1,57 @@
+$mushroom: 'Lakki Reddy',
+cursive;
+body {
+    background: url("https://github.com/webbdm/Mushroom-Mania/blob/exercise/mushroom.jpg?raw=true") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 10%;
+    width: 85%;
+}
+
+.mushroomBox {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    color: black;
+    height: 700px;
+    width: 65%;
+    margin-top: 3%;
+    .title {
+        padding: 0 20%;
+        font-family: $mushroom;
+        font-size: 50px;
+    }
+    .list-options {
+        padding: 0 15%;
+        margin: 10px 0;
+        width: 100%;
+        .searchInput {
+            width: 50%;
+            border-radius: 25px;
+            border: none;
+            background-color: darkgreen;
+        }
+        ::-webkit-input-placeholder {
+            color: white;
+            font-size: 11px;
+        }
+    }
+    .panel-box {
+        overflow: scroll;
+    }
+    .panel {
+        background-color: rgba(40, 26, 26, 0.78);
+        padding: 0 1%;
+    }
+    h2 {
+        font-size: 20px;
+        font-family: $mushroom;
+        color: white;
+        text-transform: capitalize;
+    }
+    p {
+        color: green;
+    }
+}
