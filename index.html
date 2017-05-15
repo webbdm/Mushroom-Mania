@@ -14,9 +14,9 @@
         <div class="col-md-5 col-md-offset-5 mushroomBox">
             <h1 class="title">Mushroom Mania</h1>
             <div class="list-options">
-                <input class="searchInput" type="text" name="" ng-model="searchText" placeholder="Search for a Mushroom">
-                <input type="radio" name="poison" value="false" ng-model="edible"> Poisonous
-                <input type="radio" name="poison" value="true" ng-model="edible"> Non-Poisonous
+                <input class="searchInput" type="text" name="" ng-model="searchText" placeholder=" Search for a Mushroom">
+                <input type="radio" name="poison" value="false" ng-model="edible"> POISONOUS
+                <input type="radio" name="poison" value="true" ng-model="edible"> NON-POISONOUS
             </div>
             <div class="panel-box" ng-repeat="mushroom in mushrooms | filter: edible | filter: searchText">
                 <div class="panel panel-default">

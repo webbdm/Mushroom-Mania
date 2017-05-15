@@ -29,6 +29,13 @@ body {
         width: 100%;
         .searchInput {
             width: 50%;
+            border-radius: 25px;
+            border: none;
+            background-color: darkgreen;
+        }
+        ::-webkit-input-placeholder {
+            color: white;
+            font-size: 11px;
         }
     }
     .panel-box {

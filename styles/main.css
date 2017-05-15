@@ -23,7 +23,13 @@ body {
     margin: 10px 0;
     width: 100%; }
     .mushroomBox .list-options .searchInput {
-      width: 50%; }
+      width: 50%;
+      border-radius: 25px;
+      border: none;
+      background-color: darkgreen; }
+    .mushroomBox .list-options ::-webkit-input-placeholder {
+      color: white;
+      font-size: 11px; }
   .mushroomBox .panel-box {
     overflow: scroll; }
   .mushroomBox .panel {
